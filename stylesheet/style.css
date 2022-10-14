@@ -99,7 +99,13 @@ body
 #couponCode:hover
 {
     box-shadow: none;
+    
+}
 
+#couponCode::selection
+{
+    background: #fff;
+    color: #000;
 }
 
 
