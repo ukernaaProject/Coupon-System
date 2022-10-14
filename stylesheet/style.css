@@ -94,7 +94,14 @@ body
     border-right: 0;
     user-select: all;
     box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5);
+    transition: box-shadow 0.5s ease;
 }
+#couponCode:hover
+{
+    box-shadow: none;
+
+}
+
 
 #copyButton
 {
@@ -178,9 +185,14 @@ body
     color: #fff;
     z-index: 1;
     box-shadow: inset 0 0 30px rgba(255, 255, 255, 0.349);
-    transition: background 0.5s ease;
+    transition: all 0.5s ease;
 }
 
+
+.confirmation-form .form-content input:hover
+{
+    box-shadow: none;
+}
 
 .confirmation-form .form-content input::placeholder
 {
@@ -199,6 +211,7 @@ body
 .confirmation-form .form-content input:focus
 {
     background: #fff;
+    border: 2px solid #000;
     color: #000;
     font-style: italic;
 }
@@ -217,18 +230,18 @@ body
     background: #fff;
     color: #000;
     cursor: pointer;
-    transition: background 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 .confirmation-form .form-content button:hover
 {
-    background: rgb(182, 178, 178);
-    color: rgb(255, 255, 255);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
 }
 
 .confirmation-form .form-content button:active
 {
     background: #000;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
     color: #fff;
 }
 
