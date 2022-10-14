@@ -25,7 +25,7 @@ couponCode_span.innerHTML = generateCouponCode()
 copyButton.onclick = function() {
     navigator.clipboard.writeText(couponCode_span.innerHTML)
     copyButton.innerHTML = "COPIED!"
-    copyButton.style.background = "#130047"
+    copyButton.style.background = "linear-gradient(150deg, #130047, #ED7D8F)"
     copyButton.style.color = "#fff"
     setTimeout(function() {
         copyButton.innerHTML = "COPY"

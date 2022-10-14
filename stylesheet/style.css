@@ -9,6 +9,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  user-select: none;
 }
 
 body
@@ -20,9 +21,12 @@ body
     background: #f0fff3;
 }
 
+
+/* Coupon Card */
+
 .card
 {
-    margin: 5rem;
+    margin: 3rem;
     color: #fff;
 }
 
@@ -42,7 +46,7 @@ body
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #5C2A5F, #130047);
+    background: linear-gradient(135deg, #5C2A5F, #130047, #ED7D8F);
     padding: 2rem 8rem;
     border-radius: 1rem;
     box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.15);
@@ -69,11 +73,6 @@ body
     align-items: center;
 }
 
-/* .container .coupon-card img:hover
-{
-    box-shadow: 1rem 1rem 1rem rgba(255, 255, 255, 0.535);
-    transition: box-shadow 0.5s ease;
-} */
 
 
 .coupon-row
@@ -93,6 +92,7 @@ body
     font-weight: 700;
     font-family: 'Montserrat', sans-serif;
     border-right: 0;
+    user-select: all;
 }
 
 #copyButton
@@ -124,6 +124,106 @@ body
 .circle2
 {
     right: -25px;
+}
+
+/* Form */
+
+.confirmation-form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 8rem;
+    position: relative;
+    margin-top: 1rem;
+    color: #fff;
+}
+
+.confirmation-form .form-content
+{
+    width: 50%;
+    background: linear-gradient(150deg, #130047, #ED7D8F);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 1rem;
+    padding: 50px 0;
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.15);
+}
+
+.confirmation-form .form-content h3
+{
+    font-size: 1.9rem;
+    font-weight: 700;
+    margin: 1rem;
+
+}
+.confirmation-form .form-content input
+{
+    width: 50%;
+    padding: 1rem 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border: 1px solid #fff;
+    border-radius: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+    background: transparent;
+    color: #fff;
+    transition: background 0.5s ease;
+}
+
+
+.confirmation-form .form-content input::placeholder
+{
+    color: #fff;
+}
+
+.confirmation-form .form-content input:focus::placeholder
+{
+    color: #000;
+}
+
+
+
+.confirmation-form .form-content input:focus
+{
+    background: #fff;
+    color: #000;
+    font-style: italic;
+}
+
+.confirmation-form .form-content button
+{
+    margin-top: 1rem;
+    width: 50%;
+    padding: 1rem 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+    background: #fff;
+    color: #000;
+    cursor: pointer;
+    transition: background 0.5s ease;
+}
+
+.confirmation-form .form-content button:hover
+{
+    background: rgb(182, 178, 178);
+    color: rgb(255, 255, 255);
+}
+
+.confirmation-form .form-content button:active
+{
+    background: #000;
+    color: #fff;
 }
 
 
@@ -184,6 +284,18 @@ body
     {
         right: -20px;
     }
+
+    .confirmation-form .form-content
+    {
+        padding: 50px 0;
+    }
+
+    .confirmation-form .form-content input
+    {
+        width: 80%;
+    }
+
+    
 
 
   }
