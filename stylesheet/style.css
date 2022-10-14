@@ -93,6 +93,7 @@ body
     font-family: 'Montserrat', sans-serif;
     border-right: 0;
     user-select: all;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5);
 }
 
 #copyButton
@@ -169,12 +170,14 @@ body
     font-size: 1.2rem;
     font-weight: 500;
     text-align: center;
-    border: 1px solid #fff;
+    border: 2px solid #fff;
     border-radius: 1rem;
     font-family: 'Montserrat', sans-serif;
     outline: none;
     background: transparent;
     color: #fff;
+    z-index: 1;
+    box-shadow: inset 0 0 30px rgba(255, 255, 255, 0.349);
     transition: background 0.5s ease;
 }
 
@@ -182,6 +185,8 @@ body
 .confirmation-form .form-content input::placeholder
 {
     color: #fff;
+    z-index: 3;
+    
 }
 
 .confirmation-form .form-content input:focus::placeholder
@@ -252,7 +257,10 @@ body
 
     .container .coupon-card h3
     {
-        font-size: 0.4rem;
+        text-align: center;
+        line-height: 1;
+        font-size: 2rem;
+        margin-bottom: 0.2rem;
     }
 
     .container .coupon-card p
