@@ -1,0 +1,366 @@
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Stylesheet Reset */
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body
+{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000;
+    background: #f0fff3;
+}
+
+
+/* Coupon Card */
+
+.card
+{
+    margin: 3rem;
+    color: #fff;
+}
+
+
+.container
+{
+    width: 100%;
+    background: #f0fff3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .coupon-card
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #5C2A5F, #130047, #ED7D8F);
+    padding: 2rem 8rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.15);
+    position: relative;
+}
+
+.container .coupon-card h3
+{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.container .coupon-card p
+{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.container .coupon-card img
+{
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.coupon-row
+{
+    display: flex;
+    flex-direction: row;
+    margin: 1.3rem auto;
+    align-items: center;
+    width: fit-content;
+}
+
+#couponCode
+{
+    border: 1px dashed #fff;
+    padding: 1rem 2.4rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    border-right: 0;
+    user-select: all;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5);
+    transition: box-shadow 0.5s ease;
+}
+#couponCode:hover
+{
+    box-shadow: none;
+    
+}
+
+#couponCode::selection
+{
+    background: #fff;
+    color: #000;
+}
+
+
+#copyButton
+{
+    border: 1px solid #fff;
+    background: #fff;
+    padding: 1rem 2.2rem;
+    font-size: 1.2rem;
+    color: black;
+    cursor: pointer;
+}
+
+
+.circle1, .circle2
+{
+    background: #f0fff3;
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    position: absolute;
+    transform: translateY(-50%);
+}
+
+.circle1
+{
+    left: -25px;
+}
+
+.circle2
+{
+    right: -25px;
+}
+
+/* Form */
+
+.confirmation-form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 8rem;
+    position: relative;
+    margin-top: 1rem;
+    color: #fff;
+}
+
+.confirmation-form .form-content
+{
+    width: 50%;
+    background: linear-gradient(150deg, #130047, #ED7D8F);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 1rem;
+    padding: 50px 0;
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.15);
+}
+
+.confirmation-form .form-content h3
+{
+    font-size: 1.9rem;
+    font-weight: 700;
+    margin: 1rem;
+
+}
+.confirmation-form .form-content input
+{
+    width: 50%;
+    padding: 1rem 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+    background: transparent;
+    color: #fff;
+    z-index: 1;
+    box-shadow: inset 0 0 30px rgba(255, 255, 255, 0.349);
+    transition: all 0.5s ease;
+}
+
+
+.confirmation-form .form-content input:hover
+{
+    box-shadow: none;
+}
+
+.confirmation-form .form-content input::placeholder
+{
+    color: #fff;
+    z-index: 3;
+    
+}
+
+.confirmation-form .form-content input:focus::placeholder
+{
+    color: #000;
+}
+
+
+
+.confirmation-form .form-content input:focus
+{
+    background: #fff;
+    border: 2px solid #000;
+    color: #000;
+    font-style: italic;
+}
+
+.confirmation-form .form-content button
+{
+    margin-top: 1rem;
+    width: 50%;
+    padding: 1rem 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+    background: #fff;
+    color: #000;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.confirmation-form .form-content button:hover
+{
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.confirmation-form .form-content button:active
+{
+    background: #000;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+    color: #fff;
+}
+
+
+
+
+/* Media Queries */
+
+
+@media only screen and (max-width: 800px) {
+    
+    .card
+    {
+        margin: 1rem;
+    }
+    
+    .container .coupon-card
+    {
+        padding: 2rem 2rem;
+    }
+
+    .container .coupon-card img
+    {
+        width: 100px;
+    }
+
+    .container .coupon-card h3
+    {
+        text-align: center;
+        line-height: 1;
+        font-size: 2rem;
+        margin-bottom: 0.2rem;
+    }
+
+    .container .coupon-card p
+    {
+        font-size: 1.2rem;
+    }
+
+    .coupon-row
+    {
+        margin: 1rem auto;
+    }
+
+    #couponCode
+    {
+        font-size: 1rem;
+    }
+
+    #copyButton
+    {
+        font-size: 1rem;
+    }
+
+
+    .circle1, .circle2
+    {
+        width: 40px;
+        height: 40px;
+    }
+
+    .circle1
+    {
+        left: -20px;
+    }
+
+    .circle2
+    {
+        right: -20px;
+    }
+
+    .confirmation-form
+    {
+        padding: 0.8rem 1rem;
+        margin: 0.3rem;
+    }
+
+    .confirmation-form .form-content
+    {
+        padding: 10px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.1rem;
+    }
+
+    .confirmation-form .form-content input
+    {
+        width: 80%;
+    }
+    
+    .confirmation-form .form-content h3
+    {
+        font-size: 0.9rem;
+    }
+
+    .confirmation-form .form-content input
+{
+    width: 80%;
+    padding: 1rem 1.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+    background: transparent;
+    color: #fff;
+    transition: background 0.5s ease;
+}
+
+
+
+}
