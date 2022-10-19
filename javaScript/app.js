@@ -3,7 +3,7 @@
 var couponCode_span = document.getElementById("couponCode")
 var copyButton = document.getElementById("copyButton")
 
-function generateCouponCode(len = 5) {
+function generateCouponCode(len = 12) {
     let alphanumeric = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
 
     let couponCode = new Array()
