@@ -17,8 +17,17 @@ function generateCouponCode(len = 12) {
     return couponCode
     
 }
-couponCode_span.innerHTML = generateCouponCode()
 
+
+couponCode = generateCouponCode();
+
+if (localStorage.getItem("coup") == null) {
+    localStorage.setItem("coup", couponCode);
+}
+else{
+    couponCode = localStorage.getItem("coup");
+}
+couponCode_span.innerText = couponCode;
 // Copy Coupon Code to Clipboard
 
 
