@@ -3,7 +3,7 @@
 var couponCode_span = document.getElementById("couponCode")
 var copyButton = document.getElementById("copyButton")
 
-function generateCouponCode(len = 5) {
+function generateCouponCode(len = 12) {
     let alphanumeric = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
 
     let couponCode = new Array()
@@ -17,8 +17,17 @@ function generateCouponCode(len = 5) {
     return couponCode
     
 }
-couponCode_span.innerHTML = generateCouponCode()
 
+
+couponCode = generateCouponCode();
+
+if (localStorage.getItem("coup") == null) {
+    localStorage.setItem("coup", couponCode);
+}
+else{
+    couponCode = localStorage.getItem("coup");
+}
+couponCode_span.innerText = couponCode;
 // Copy Coupon Code to Clipboard
 
 
